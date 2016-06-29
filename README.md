@@ -10,3 +10,13 @@ This was designed to be a RESTFul Service as well and was invoked using the foll
 [WebGet(ResponseFormat=WebMessageFormat.Json,UriTemplate="population?input={input}")]
 ```
 "Input" on the URL was to be user input of a continent so invocation from the webpage would be along the lines of  http://hostingserver.com/population?input=Africa
+
+**Service Two: Print a Randomized Password Upon User Input of Desired Password Length**
+The fuction of this web service was to create a simple and user friendly way to create strong, complex, and secure passwords. The user would enter a desired password length which is sent to the hosting server. The hosting server will then send the weboage GUI an output of a randomized password as per given length.
+
+This was designed to be a RESTFul Service as well and was invoked using the following call
+```
+[WebGet(ResponseFormat = WebMessageFormat.Json, UriTemplate = "password?passwordLength={passwordLength}")]
+```
+"passwordLength" on the URL is supposed to be the user input the webpage accepts and then invokes the URL by using the given parameter of the input along with the URL. The invocation is along the lines of
+http://hostingserver.com/password?length=8

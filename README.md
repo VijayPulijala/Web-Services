@@ -1,4 +1,4 @@
-# Web-Services
+# Web Services
 
 As part of a part of a project we were required to build 4 web services. Two were to be developed by using traditional call by value structure. While the other two were to be developed using RESTful web service guidelines and for the services to be called via web URL invocation and parameter passing through the URL itself. Afterwards it would fetch the result using web get fuction calls. Then we were tasked to build a clean and simple testing webpage, so graders have a simple environment to test our services. We were expected to incorporate the published web services by publishing the web services onto a hosting server so they could be accessed remotely. We were also required to follow the principles of server sided scripting as opposed to client sided scripting so that user inputs and executions are more secure and seamless. And finally the webage was required to follow basic UX and UI guidelines such that an ordinary user can navigate it with ease. Below are examples of each of the web services' fuction, our group had designed each of these functions around the theme of a travel based website.
 
@@ -20,3 +20,26 @@ This was designed to be a RESTFul Service as well and was invoked using the foll
 ```
 "passwordLength" on the URL is supposed to be the user input the webpage accepts and then invokes the URL by using the given parameter of the input along with the URL. The invocation is along the lines of
 http://hostingserver.com/password?length=8
+
+**Service Three: Cost Analysis Tool for Vacations**
+The user inputs on the webpage GUI fields a couple of answers regarding trip budgets and expenses. Then the web service calculates an expense report using FIXED cost averages and determines an extensive report of daily budgets and if a proposed budget is sustainable given a vacation durations. The fixed costs are determined by searching the average costs of certain expenses such as food and housing on a regional basis.
+
+**Service Four: Simple Alphabetized List Generator**
+User inputs a list of locations (any string really) in any order seperated by a space. The web service takes this unified string, parses it, then seperates it, and finally prints in a clean alphabetized format
+
+Example:
+
+Input:
+```
+gErMaNy FRAnce england ITALY
+```
+
+Output:
+```
+1. England
+2. France
+3. Germany
+4. Italy
+```
+
+Sorting algorithm used for this is insertion sort.
